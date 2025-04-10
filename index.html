@@ -21,7 +21,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
-            align-items: center;
+            align-items: normal;
         }
         .control-group {
             display: flex;
@@ -72,19 +72,19 @@
             <div class="control-group">
                 <input type="file" id="imageUpload" accept="image/*">
             </div>
-            
+            <br>
             <div class="control-group">
-                <label for="threshold">阈值 (0-255)</label>
+                <label for="threshold">阈值(数值越高，白色越多)<br>高阈值适合提取图片较亮部分，低阈值则相反</label>
                 <input type="range" id="threshold" min="0" max="255" value="128">
                 <span id="thresholdValue">128</span>
             </div>
-            
+            <br>
             <div class="control-group">
-                <label for="simplify">简化级别</label>
+                <label for="simplify">简化级别(级别越高，最终图片越平滑)<br>该参数用于控制图片粗糙度</label>
                 <input type="range" id="simplify" min="1" max="10" value="3">
                 <span id="simplifyValue">3</span>
             </div>
-            
+            <br>
             <div class="control-group">
                 <label for="color">剪纸颜色</label>
                 <input type="color" id="color" value="#ff0000">
